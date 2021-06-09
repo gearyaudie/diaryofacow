@@ -1,0 +1,25 @@
+<%- include('./partials/_nav') %>
+
+<!-- <div class="create-section">
+  <form action="/blogs" method="POST">
+    <input type="text" name="title" placeholder="Title" />
+    <input type="text" name="body" placeholder="Body" />
+    <button>Submit</button>
+  </form>
+</div> -->
+<div class="home-section">
+  <div class="home-section-inner">
+    <h1>Create a Blog</h1>
+  </div>
+</div>
+<div class="subscribe-box"> 
+  <!-- <h2>Create a Blog Now!</h2> -->
+  <form class="subscribe" action="/blogs" method="POST">
+    <input type="text" name="title" placeholder="blog title..." autocomplete="off" required="required"/>
+    <textarea type="text" name="body" placeholder="blog content..." autocomplete="off" required="required"></textarea>
+    <button type="submit"> <span>Create Blog</span></button>
+  </form>
+</div>
+
+
+<%- include('./partials/_footer') %>

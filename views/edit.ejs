@@ -1,0 +1,17 @@
+<%- include('./partials/_nav') %>
+
+<div class="home-section">
+    <div class="home-section-inner">
+      <h1>Edit Blog</h1>
+    </div>
+  </div>
+  <div class="subscribe-box"> 
+    <!-- <h2>Create a Blog Now!</h2> -->
+    <form class="subscribe" action="/blogs/<%= blog._id %>?_method=PUT" method="POST">
+      <input type="text" name="title" placeholder="blog title..." autocomplete="off" required="required" value="<%= blog.title %>" />
+      <textarea type="text" name="body" placeholder="blog content..." autocomplete="off" required="required"><%= blog.body %></textarea>
+      <button type="submit"> <span>Save Changes</span></button>
+    </form>
+  </div>
+
+<%- include('./partials/_footer') %>

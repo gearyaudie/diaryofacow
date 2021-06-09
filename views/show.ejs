@@ -1,0 +1,22 @@
+<%- include('./partials/_nav') %>
+
+<div class="home-section">
+  <div class="home-section-inner">
+    <h1><%= blog.title %></h1>
+  </div>
+</div>
+<div class="home">
+  <!-- <div class="home-title">
+    <h1>posts</h1>
+  </div> -->
+  <div class="show-section">
+      <p><%= blog.body %></p>
+      <div class="buttons">
+        <a href="/blogs/edit/<%=blog._id %>" class="edit-btn">Edit</a>
+        <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+          <button type="submit" class="delete-btn">Delete</button>
+        </form>
+      </div>
+  </div>
+</div>
+<%- include('./partials/_footer') %>
