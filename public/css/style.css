@@ -6,6 +6,7 @@
 
 body {
   margin-bottom: 50px;
+  font-family: Arial, sans-serif;
 }
 
 ul {
@@ -118,6 +119,7 @@ a {
   margin: 50px auto;
   overflow: hidden;
   width: 700px;
+  max-height: 250px;
 }
 
 .course h6 {
@@ -129,7 +131,7 @@ a {
 
 .course h2 {
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin: 35px 0;
 }
 
 .course-preview {
@@ -366,4 +368,46 @@ a {
   color: #a9a9a9;
   padding: 5px;
   margin-top: 10px;
+}
+
+@media (max-width: 650px) {
+  .btn {
+    font-size: 12px;
+    padding: 8px 21px;
+    bottom: 15px;
+    right: 20px;
+  }
+
+  .course-info h2 {
+    font-size: 18px;
+  }
+
+  .course-preview {
+    padding: 15px;
+    max-width: 75px;
+  }
+
+  .course-preview h2 {
+    font-size: 15px;
+  }
+  .course-preview h6 {
+    padding-top: 15px;
+    font-size: 10px;
+  }
+
+  .home-section {
+    height: 300px;
+  }
+
+  .home-section .home-section-inner {
+    padding: 125px 0px;
+    font-size: 13px;
+  }
+
+  .home-section::after {
+    height: 300px;
+  }
+  .subscribe-box {
+    padding: 20px 15px;
+  }
 }
